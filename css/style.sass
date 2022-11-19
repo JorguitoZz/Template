@@ -1,0 +1,70 @@
+$letter : #1E0E62
+$letter-secundary: rgba(21, 20, 57, 0.4)
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Arial, Helvetica, sans-serif
+
+
+
+.header
+    padding: 25px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .header-link
+        font-size: 18px
+        font-weight: 600
+        color: $letter 
+    .header-email
+        background: #fff
+        border-radius: 100px
+        padding: 5px 19px
+        border: 2px solid #EBEAED
+        color: $letter 
+        font-weight: 600
+
+main
+    .section-portada
+        background: #f1f1f1
+        padding: 50px 0 
+        padding-left: 20px
+        border-bottom: 1px solid #9999A7 
+        display: flex
+        flex-direction: column
+        gap: 30px
+        .portada-text 
+            h1
+                margin: 0
+                color: $letter
+                margin-bottom: 30px
+            p
+                padding-right: 60px 
+                font-weight: 600
+                color: $letter-secundary
+        .portada-img-container
+            width: 75%
+            .portada-img
+                width: 100%
+                border-radius: 10px
+    .section-habilidades
+        background: #f1f1f1
+        padding: 50px 0
+        padding-left: 20px
+        .main-habilidades-text
+            display: flex
+            flex-direction: column
+            gap: 20px
+            padding-bottom: 40px 
+        .main-habilidades
+            display: flex
+            flex-wrap: wrap
+            gap: 30px
+            .habilidad
+                display: flex
+                flex-direction: column
+                gap: 10px
+            
+
+                
