@@ -6,7 +6,12 @@ $letter-secundary: rgba(21, 20, 57, 0.4)
     box-sizing: border-box
     font-family: Arial, Helvetica, sans-serif
 
-
+@mixin texto
+    color: $letter-secundary
+    font-weight: 600
+    
+    
+    
 
 .header
     padding: 25px 20px
@@ -42,12 +47,13 @@ main
             p
                 padding-right: 60px 
                 font-weight: 600
-                color: $letter-secundary
+                @include texto
         .portada-img-container
             width: 75%
             .portada-img
                 width: 100%
                 border-radius: 10px
+    
     .section-habilidades
         background: #f1f1f1
         padding: 50px 0
@@ -57,6 +63,10 @@ main
             flex-direction: column
             gap: 20px
             padding-bottom: 40px 
+            h2
+                color: $letter
+            p
+                @include texto
         .main-habilidades
             display: flex
             flex-wrap: wrap
@@ -65,6 +75,74 @@ main
                 display: flex
                 flex-direction: column
                 gap: 10px
+                h5 
+                    color: $letter
+                    font-size: 16px
+                p
+                    @include texto
+                    font-weight: 14px
+            
+    .section-experiencia
+        padding: 40px 0
+        .experiencia-text
+            display: flex
+            flex-direction: column
+            gap: 20px
+            h2, p, 
+                text-align: center
+            h2
+                color: $letter
+            p
+                @include texto
+            button
+                display: block
+                margin: 0 auto
+                padding: 8px 40px
+                border-radius: 100px
+                background: #25DAC5
+                border: none
+                color: #fff
+        .experiencia-proyectos 
+            width: 80%
+            margin: 60px auto
+            display: flex
+            flex-wrap: wrap
+            gap: 60px
+            .proyecto
+                width: 100%
+                display: flex
+                flex-direction: column 
+                gap: 15px
+                .proyecto-img
+                    width: 100%
+                    border-radius: 10px
+                    overflow: hidden
+                    img
+                        width: 100%
+                        display: block
+                .proyecto-title
+                    color: $letter
+                .proyecto-descripcion
+                    @include texto
+
+footer
+    background: #f1f1f1
+    padding: 100px 0   
+    div.footer-container
+        display: flex
+        flex-direction: column
+        gap: 30px
+        .footer-text
+            font-size: 22px
+            color: $letter     
+            text-align: center
+            line-height: 30px
+            span
+                color: #482BE7
+        .footer-icons
+            display: flex
+            gap: 38px
+            margin: 0 auto
             
 
                 
